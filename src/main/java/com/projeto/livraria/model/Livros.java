@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class Livros {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column
 	private int codlivro;
 	@Column

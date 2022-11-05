@@ -1,1 +1,0 @@
-insert  into `tbusuarios`(`login`,`senha`,`nome`) values (232,'abc','Luisa Lopes'),(245,'dois','Luis Peres'),(567,'abcde','Ana Silva');

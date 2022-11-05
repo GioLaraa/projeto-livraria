@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="index.html">MENU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page"
+                            href="categorias/listaCategorias">Lista Categoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page"> | </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="livros/cadastrarLivros">Cadastrar Livro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page"> | </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="livros/mostrarLivros">Mostrar Livros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page"> | </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid cards">
+        <div class="row d-flex justify-content-center text-center">
+
+            <div class="card mt-5">
+                <h5 class="card-header">Cadastrar Livro</h5>
+                <div class="card-body">
+                    <form action="novo" method="GET">
+
+
+                        <div class="form-floating text-muted">
+                            <input name="titulo" type="text" class="form-control" placeholder="Digite o Titulo">
+                            <label for="titulo"></label>
+                        </div>
+
+                        <div class="form-floating text-muted">
+                            <input name="autor" type="text" class="form-control" placeholder="Digite o Autor">
+                            <label for="autor"></label>
+                        </div>
+
+                        <div class="form-floating text-muted">
+                            <input name="valor" type="number" class="form-control" placeholder="Digite o Valor">
+                            <label for="valor"></label>
+                        </div>
+
+
+                        <h6 class="fs-54 text-center">Selecione a categoria:</h6>
+                        <div class="row d-flex justify-content-center mt-0 mb-0">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <select name="categoria" type="text" class="form-control" id="categoria">
+                                        <option name="categoria" for="categoria" type="">
+                                            Arquitetura</option>
+                                        <option name="categoria" for="categoria" type="">
+                                            Desgin</option>
+                                        <option name="categoria" for="categoria" type="">
+                                            Informática</option>
+                                        <option name="categoria" for="categoria" type="">
+                                            Literatura brasileira</option>
+                                        <option name="categoria" for="categoria" type="">
+                                            Literatura infantil</option>
+                                        <option name="categoria" for="categoria" type="">
+                                            Literatura universal</option>
+                                        <option name="categoria" for="categoria" type="">
+                                            Música e arte</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+</body>
+
+</html>
